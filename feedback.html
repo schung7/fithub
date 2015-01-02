@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -8,17 +8,17 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Your Account</title>
+    <title>Feedback</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="Starter%20Template%20for%20Bootstrap_files/bootstrap.css" rel="stylesheet">
+    <link href="js/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="Starter%20Template%20for%20Bootstrap_files/starter-template.css" rel="stylesheet">
+    <link href="js/starter-template.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="Starter%20Template%20for%20Bootstrap_files/ie-emulation-modes-warning.js"></script>
+    <script src="js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -122,101 +122,66 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./Jumbotron Template for Bootstrap.htm">FitHub</a>
+          <a class="navbar-brand" href="./index.html">FitHub</a>
         </div>
         <div style="height: 0.8px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">View Current Week</a></li>
-            <li><a href="#about">View Past Weeks</a></li>
-            <li><a href="#contact">Account Management</a></li>
-            <li><a href="#contact">Feedback</a></li>
+            <li><a href="./week.html">View Current Week</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">View Past Weeks <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">August</li>
+                <li><a href="#">August 18 2014</a></li>
+                <li><a href="#">August 25 2014</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">September</li>
+                <li><a href="#">September 1 2014</a></li>
+                <li><a href="#">September 8 2014</a></li>
+                <li><a href="#">September 15 2014</a></li>
+                <li><a href="#">September 15 2014</a></li>
+                <li><a href="#">September 22 2014</a></li>
+                <li><a href="#">September 29 2014</a></li>
+              </ul>
+            </li>
+            <li><a href="./account.html">Account Management</a></li>
+            <li class="active"><a href="#">Feedback</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container">
+    <!-- contact begins -->
+     <section id="page-contact" class="page-contact">
+          <div class="container">
+              <header class="section-header">
+                  <center><h2 class="section-title"><span>Feedback</span></h2></center>
+                    <div class="spacer"></div>
+              </header>
+        <div class="control-group">
+            <div class="controls">
+                <textarea name="message" id="message" rows="8" class="form-control input-lg" placeholder="Help us make our product better for you! Please provide any comments on how we could improve your experience."></textarea>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-default btn-lg btn-block">Submit Feedback</button>
+        </div>
+    </form><!-- End contact-form -->
+          </div>
+        </div><!-- End row -->
 
-      <div class="starter-template">
-        <h1>October 6th, 2014</h1>
-        <p class="lead">Welcome back! This is your workout plan for this week.</p>
-      </div>
-
-    </div><!-- /.container -->
-
-    <h2 class="sub-header1">Monday: Arms & Shoulders</h2>
-      <h3 class="sub-header2">Circuit 1:   Diamond Push-ups, Modified Pull-ups</h3>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Diamond Push-ups</th>
-                  <th>Weight</th>
-                  <th>Reps</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Set 1:</td>
-                  <td>Body</td>
-                  <td>Max</td>
-                </tr>
-                <tr>
-                  <td>Set 2:</td>
-                  <td>Body</td>
-                  <td>Max</td>
-                </tr>
-                <tr>
-                  <td>Set 3:</td>
-                  <td>Body</td>
-                  <td>Max</td>
-                </tr>
-              </tbody>
-              <thead>
-                <tr>
-                  <th>Modified Pull-ups (Palms Up)</th>
-                  <th>Weight</th>
-                  <th>Reps</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Set 1:</td>
-                  <td>Body</td>
-                  <td>Max</td>
-                </tr>
-                <tr>
-                  <td>Set 2:</td>
-                  <td>Body</td>
-                  <td>Max</td>
-                </tr>
-                <tr>
-                  <td>Set 3:</td>
-                  <td>Body</td>
-                  <td>Max</td>
-                </tr>
-              </tbody>
-            </table>
-      <h3 class="sub-header2">Circuit 2:   Bicep Curl to Shoulder Press Busdrivers</h3>
-      <h3 class="sub-header2">Circuit 3:   Hammer Curls Kickbacks</h3>
-      <h2 class="sub-header1">Tuesday: Soccer & Torso</h2>
-      <h2 class="sub-header1">Wednesday: Cardio Circuit</h2>
-      <h2 class="sub-header1">Thursday: Yoga & Core Work</h2>
-      <h2 class="sub-header1">Friday: 5K Training</h2>
-      <h2 class="sub-header1">Saturday: Competition Day</h2>
-      <h2 class="sub-header1">Sunday: Stretching</h2>
-
-    <!-- Bootstrap core JavaScript
+        </div>
+    </section> <!-- contact ends -->
+   <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="Starter%20Template%20for%20Bootstrap_files/jquery.js"></script>
-    <script src="Starter%20Template%20for%20Bootstrap_files/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="Starter%20Template%20for%20Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
   
 
-<div style="opacity: 0; width: 0px; height: 0px; position: fixed; overflow: visible; top: 1px; right: 1px; left: auto;" class="honey-launchpad-container" data-launchpad-src="FF">	
+<div style="opacity: 0; width: 0px; height: 0px; position: fixed; overflow: visible; top: 1px; right: 1px; left: auto;" class="honey-launchpad-container" data-launchpad-src="FF">  
   <div style="display: none;" class="honey-launchpad-close"><!-- Commented out the picture.. for some reason honey.launchpad.js depends on this div element, so cannot remove entirely
-  	<img src="https://sbcloud.joinhoney.com/resources/img/close4.png">--></div>
+    <img src="https://sbcloud.joinhoney.com/resources/img/close4.png">--></div>
 <iframe style="width: 100%; height: 100%;" sandbox="allow-same-origin allow-scripts allow-popups" allowtransparency="true" id="honey_launchpad_iframe"></iframe></div>
 <div class="honey-launchpad-modal" data-launchpad-src="FF"></div></body></html>
