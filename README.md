@@ -1,2 +1,2 @@
-fithub.github.io
+Initial mockups for a start-up idea for a friend.
 ================
